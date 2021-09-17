@@ -1,0 +1,109 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: aquamarine;
+}
+
+.orientador{
+    float: left;
+    color: gray;
+    font-size: xx-large;
+}
+
+.ícone{
+        width: 6%;
+        float: left;
+}
+
+.opções{
+    width: 54%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    width: 15%;
+    display: inline-block;
+    list-style:none;
+    font-size: medium;
+}
+
+ul li a{
+    text-decoration: none;
+    color:gray;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color:lightsteelblue;
+}
+
+#título{
+    color:dimgray;
+}
+
+#subtítulo{
+    margin-left: center;
+    color: dimgray;
+}
+
+fieldset{
+    border:0;
+}
+
+input, select, textarea, button{
+    border-radius: 10px;
+}
+
+.campos{
+    margin-bottom: 1em;
+}
+
+.campos label{
+    margin-bottom: 0.5em;
+    color: dimgray;
+    display: block;
+}
+fieldset.dados .campos{
+    float: left;
+    margin-right: 1em;
+}
+
+.campos input[type="text"], .campos input[type="email"], .campos select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid dimgray;
+    display: block;
+}
+
+.campos select option{
+    padding-right: 1em;
+}
+
+.campos input:focus, .campos select:focus, .campos textarea:focus{
+    background-color: rgba(218, 255, 243);
+}
+
+.nota{
+    color:dimgrey;
+}
+
+#button{
+    background-color: whitesmoke;
+    border: 1px solid dimgray;
+}
+
+#button:hover{
+    background-color: rgba(218, 255, 243);
+}

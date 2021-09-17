@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <title>Formulário do Beloti</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link
+      rel="shortcut icon"
+      href="https://kinsta.com/pt/wp-content/uploads/sites/3/2020/01/formularios-wordpress-1024x512.png"
+    />
+  </head>
+
+  <body>
+      <nav>
+          <img class ='ícone' src = "https://consejotecnologico.com/wp-content/uploads/2019/03/istock-658846350.jpg">
+          <h1 class = 'orientador'>Conheça mais sobre o nosso perfil!</h1>
+          <ul class = 'opções'>
+            <li><a href='#'>HOME</a></li>
+            <li><a href='#'>ABOUT</a></li>
+            <li><a href='#'>SERVICE</a></li>
+            <li><a href='#'>DESIGN</a></li>
+            <li><a href='#'>CONTACT</a></li>
+          </ul>
+      </nav>
+
+      <div><br>
+        <h2 id="título">Alunidos</h2><br>
+        <p id="subtítulo"><strong>Preencha os campos abaixos com os seus dados para outros alunos poderem te contatar:</strong></p>
+      </div>
+
+      <form id="formulário">
+        <fieldset class="dados">
+          <div class="campos">
+            <label for="nome próprio">Nome:</label>
+            <input type="text" nome="nome próprio" id="nome próprio" required>
+          </div>
+
+          <div class="campos">
+            <label for="sobrenome próprio">Sobrenome:</label>
+            <input type="text" name="sobrenome próprio" id="sobrenome próprio">
+          </div>
+
+          <div class="campos">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+        </fieldset>
+        <br>
+
+        <p id="subtítulo"><strong>Obrigado por nos fornecer estas infomações suas, agora vamos para a avaliação do seu professor:</strong></p>
+        <fieldset class="dados">
+          <div class="campos" id="obrigatório">
+            <label for="nome do professor">Nome Completo do Professor:</label>
+            <input type="text" name="nome completo do professor" id="nome do professor" required>
+          </div>
+
+          <div class="campos" id="obrigatório">
+            <label for="disciplina do professor">Disciplina do Professor:</label>
+            <select id="Disciplina" required>
+              <option selected disabled value="">Escolha...</option>
+              <option>C1</option>
+              <option>IAL</option>
+              <option>APC</option>
+              <option>ISC</option>
+              <option>FDC</option>
+              <option>OEB</option>
+            </select>
+          </div><br><br><br><br>
+          
+          <div class="campos">
+            <label for="presença">O professor cobra presença nas aulas?</label>
+            <label>
+              <input type="radio" name="presença" value="Não">Não
+            </label>
+            <label>
+              <input type="radio" name="presença" value="Sim">Sim
+            </label>
+          </div>
+
+          <div class="campos">
+            <label for="provas">As provas são...</label>
+            <label>
+              <input type="radio" name="provas" value="Fáceis">Fáceis
+            </label>
+            <label>
+              <input type="radio" name="provas" value="Medianas">Medianas
+            </label>
+            <label>
+              <input type="radio" name="provas" value="Difíceis">Difíceis
+            </label>
+          </div>
+
+          <div class="campos">
+            <label for="atividades">A quantidade de atividades demandadas é...</label>
+            <label>
+              <input type="radio" name="atividades" value="Baixa">Baixa
+            </label>
+            <label>
+              <input type="radio" name="atividades" value="Média">Média
+            </label>
+            <label>
+              <input type="radio" name="atividades" value="Alta">Alta
+            </label>
+          </div><br><br><br><br><br><br><br>
+          <div class="nota">
+            <label for="nota do professor">Qual é a sua nota final para o professor</label>
+            <input type="range" name="nota do professor">
+          </div><br>
+
+          <div class="campos">
+            <label for="comentários">Comente sobre a sua experiência com a disciplina e o professor:</label><br>
+            <textarea rows="3" style="width: 660px" id="comentários" name="comentários"></textarea>
+          </div>
+        </fieldset>
+        <button id ="button"type="submit">Enviar</button>
+      </form>
+
+  </body>
